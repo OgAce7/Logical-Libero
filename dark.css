@@ -1,0 +1,37 @@
+:root {
+    --bg-color: tan;
+    --text-color: #000;
+    --card-bg: lightblue;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.nav-card {
+    background-color: var(--card-bg);
+    transition: background-color 0.3s ease;
+}
+
+body.dark {
+    --bg-color: #121212;
+    --text-color: #f1f1f1;
+    --card-bg: #1e1e1e;
+}
+
+.dark .nav-card,
+.dark .header,
+.dark .foot {
+    background-color: #1e1e1e !important;
+    color: #f1f1f1;
+}
+
+.dark-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: inherit;
+}
